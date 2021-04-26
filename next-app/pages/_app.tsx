@@ -1,3 +1,6 @@
+const path = require("path");
+console.log(">>> _app.tsx", path.resolve("react"));
+
 import '../styles/globals.sass'
 
 import {AppProps} from 'next/app'

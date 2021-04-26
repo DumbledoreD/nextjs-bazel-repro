@@ -1,3 +1,6 @@
+const path = require("path");
+console.log(">>> next.config.js", path.resolve("react"));
+
 const withPWA = require('next-pwa')
 const runtimeCaching = require('next-pwa/cache')
 
@@ -16,7 +19,7 @@ module.exports = withPWA({
 
   webpack: config => {
     // To make Bazel dev server work
-    config.watchOptions = {poll: 300}
+    config.watchOptions = { poll: 300 }
     return config
   },
 
